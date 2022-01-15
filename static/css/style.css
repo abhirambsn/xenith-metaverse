@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  --bg-color: linear-gradient(to right, "#402571", "#311F65");
+  --typeSpeed: 2.5s;
+  --textLength: 9;
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+*:focus {
+  outline: none !important;
+}
+
+@font-face {
+  font-family: Tigerious;
+  src: url("../fonts/TigeriousItalic-9YyJn.otf");
+}
+
+@font-face {
+  font-family: Wynford;
+  src: url("../fonts/WynfordObliqueLineAlt1-4Byx9.otf");
+}
+
+@font-face {
+  font-family: Hyperhelix;
+  src: url("../fonts/HyperHelix-nRR2V.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.lotter-bg {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 700px) {
+  .lottie-bg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hidden {
+    display: block !important;
+  }
+
+  .active {
+    display: none !important;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#preLoader {
+  width: 100%;
+  height: 100vh;
+}
+
+
+.hero-heading {
+  color: white;
+  font-family: "Tigerious";
+}
+
+.heading-title {
+  font-family: "Hyperhelix";
+  position: relative;
+  font-size: 1.25em;
+}
+
+.heading-title::before,
+.heading-title::after {
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.heading-title::before {
+  background-image: linear-gradient(to right, #171D2F, #132942, #11111E);
+  animation: animateTyping var(--typeSpeed) steps(var(--textLength)) forwards;
+}
+
+.heading-title::after {
+  width: 0.125em;
+  background: white;
+  animation: animateTyping var(--typeSpeed) steps(var(--textLength)) forwards,
+    blink 2.5s steps(var(--textLength)) forwards;
+}
+
+@keyframes animateTyping {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+.c-white {
+  color: white !important;
+  transition: all 0.8s ease-in;
+}
+
+#pos-rel-1 {
+  max-height: 110vh;
+  overflow: hidden;
+}
+
+#event {
+  height: 150vh;
+  overflow: hidden;
+  padding-top: 70px;
+  background-color: white;
+}
+
+.event-card {
+  height: 40vh;
+  margin: 0% 3%;
+}
+
+.section-text {
+  margin: 0 5%;
+}
+
+@media only screen and (max-width: 1000px) {
+  #event {
+    height: 150vh;
+    overflow: hidden;
+    background-color: whitesmoke;
+    padding: 5%;
+  }
+
+  .event-card {
+    height: 100vh;
+    margin: 0% 3%;
+  }
+
+  #team {
+    height: 100vh;
+    overflow: hidden;
+    padding: 5%;
+    background-color: whitesmoke;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  #event {
+    height: 150vh;
+    overflow: hidden;
+    background-color: whitesmoke;
+    padding: 5%;
+  }
+
+  #team {
+    height: 100vh;
+    overflow: hidden;
+    padding: 5%;
+    background-color: whitesmoke;
+  }
+
+  .event-card {
+    height: 100vh;
+    margin: 0% 3%;
+  }
+}
+
+@media only screen and (max-width: 327px) {
+  .section-text {
+    margin: 0 auto;
+  }
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  overflow: visible;
+}

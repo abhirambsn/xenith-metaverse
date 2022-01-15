@@ -1,0 +1,8 @@
+.about-container{
+ margin: 5% !important;
+}
+.toggle-text{
+    cursor: pointer;
+    font-weight: bold;
+    color: #132942;
+}

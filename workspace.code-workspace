@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\xenith2022-fixed"
+		},
+		{
+			"path": "..\\xenith2022-tailwind"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "xenith2022-fixed",
+		"emmet.includeLanguages": {
+			"javascript": "javascriptreact"
+		}
+	}
+}

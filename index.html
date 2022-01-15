@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Metaverse</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/static/css/uikit.min.css" />
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/about.css" />
+    <link rel="stylesheet" href="/static/css/scroll.css" />
+    <link rel="stylesheet" href="/static/css/timeline.css" />
+    <link rel="stylesheet" href="/static/css/sponsor.css" />
+    <link rel="stylesheet" href="/static/css/team.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="/static/css/navbar.css" />
+    <link rel="stylesheet" href="/static/css/event.css" />
+    <!--Lottie player-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/static/js/main.js"></script>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="static/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!--Pre Loader-->
+    <div id="preLoader">
+      <div class="uk-position-center">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="static/lf30_editor_2vwxpmet.json"
+          background="transparent"
+          speed="1"
+          style="width: 100%; height: 40vh"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </div>
+
+    <div id="postLoader" class="uk-hidden">
+      <div class="uk-position-relative" id="pos-rel-1">
+        <!--Hidden For Phone-->
+        <lottie-player
+          src="https://assets6.lottiefiles.com/packages/lf20_pvpf4883.json"
+          background="transparent"
+          speed="1"
+          class="active"
+          loop
+          autoplay
+        ></lottie-player>
+        <!--Hidden For Pc-->
+        <img src="static/img/lottie_mb.gif" class="hidden lottie-bg" alt="" />
+
+        <!--Hidden For Phone-->
+        <div
+          class="uk-position-top active"
+          uk-scrollspy="cls:uk-animation-fade"
+        >
+          <div
+            uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
+          >
+            <nav
+              class="uk-navbar-container uk-margin uk-navbar-transparent uk-light"
+              uk-navbar="dropbar: true;"
+              id="navbarMain"
+            >
+              <div class="uk-navbar-center">
+                <a href="index.html" class="uk-navbar-item uk-logo"
+                  ><img src="" alt=""
+                /></a>
+                <ul class="uk-navbar-nav">
+                  <li id="ni-1" onclick="setActive(1)" class="active"><a class="cp-tag" href="#postLoader">Home</a></li>
+                  <li id="ni-2" onclick="setActive(2)"><a class="cp-tag" href="#about">About</a></li>
+                  <li id="ni-3" onclick="setActive(3)"><a class="cp-tag" href="#problemstmt">Problem Statement</a></li>
+                  <li id="ni-4" onclick="setActive(4)"><a class="cp-tag" href="#timeline">Timeline</a></li>
+                  <li id="ni-5" onclick="setActive(5)"><a class="cp-tag" href="#team">Team</a></li>
+                  <li id="ni-6" onclick="setActive(6)"><a class="cp-tag" href="#sponsors">Sponsors</a></li>
+                  <li id="ni-7" onclick="setActive(7)"><a class="cp-tag" href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="uk-position-center" uk-scrollspy="cls:uk-animation-fade">
+          <h4 class="uk-heading-line uk-text-center hero-heading">
+            <span>Beyond The Apex With</span>
+          </h4>
+          <h1 class="uk-heading-large uk-text-center hero-heading">
+            <span class="heading-title">Metaverse</span>
+          </h1>
+        </div>
+        <!--Hidden for Pc-->
+        <div class="hidden nav-mb">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li><a class="a-tag" href="#postLoader">Home</a></li>
+                <li><a class="a-tag" href="#about">About</a></li>
+                <li><a class="a-tag" href="#event">Events</a></li>
+                <li><a class="a-tag" href="#timeline">Timeline</a></li>
+                <li><a class="a-tag" href="#team">Team</a></li>
+                <li><a class="a-tag" href="#sponsors">Sponsors</a></li>
+                <li><a class="a-tag" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!--About section begins-->
+      <div id="about" uk-scrollspy="cls:uk-animation-fade">
+        <div style="text-align: center; width: 100%">
+          <span class="sectionHead">About</span>
+          <div class="about-container">
+            <p class="uk-text-justify uk-text-large section-text">
+              In the last few years, we have come to terms with the fact that
+              there can be nothing in real life which isn't possible and there
+              is nothing which we can Ctrl+ delete from the existence of our
+              history. Good, bad, endearing - all sorts of memories within our
+              heart, we always tend to look forward to what is yet to come with
+              infinite dreams and aspirations along with a ray of hope to go
+              beyond the "zenith" of the knowns and unknowns and discover new
+              forms with our creative and curious minds.
+              <span id="toggle-abt" hidden
+                >With this hope and motto in our thoughts, IEEE Student Branch
+                JIIT is thrilled to announce the second online edition of our
+                most anticipated and largely awaited two days annual fest ~
+                "XENITH-22" , with the theme being "Beyond The Apex", where we
+                explore the young minds and promote them to think beyond the
+                reasonable.
+              </span>
+              <span
+                data-uk-toggle="{target:'.my-class'}"
+                uk-toggle="target: #toggle-abt; animation: uk-animation-slide-top"
+                class="toggle-text self"
+              >
+                ..Read More
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--About section ends-->
+
+      <!--Event section begins-->
+      <div id="problemstmt" uk-scrollspy="cls:uk-animation-fade">
+        <div style="text-align: center; width: 100%">
+          <span class="sectionHeadW">Problem Statement</span>
+        </div>
+        <div class="event-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glowing">
+                <div class="flip-card-front-text">
+                  <span>
+                    Speaker 1
+                  </span>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glowing">
+                <div class="flip-card-front-text">
+                  <span>
+                    Speaker 2
+                  </span>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glowing">
+                <div class="flip-card-front-text">
+                  <span>
+                    Tech CSE Event 1
+                  </span>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glowing">
+                <div class="flip-card-front-text">
+                  <span>
+                    Tech CSE Event 2
+                  </span>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glowing">
+                <div class="flip-card-front-text">
+                  <span>
+                    Tech CSE Event 3
+                  </span>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glowing">
+                <div class="flip-card-front-text">
+                  <span>
+                    Tech ECE Event 1
+                  </span>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Event section ends-->
+
+      <!--Timeline section begins-->
+
+      <div class="uk-position-relative" id="timeline" uk-scrollspy="cls:uk-animation-fade">
+        <div class="uk-section timeline-main">
+          <div class="uk-position-top-center">
+            <div class="uk-tile uk-tile-transparent">
+              <span class="sectionHead">Timeline</span>
+            </div>
+          </div>
+          <div class="timeline-container">
+            <ul>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!--Timeline section ends -->
+
+      <!--Team section begins-->
+      <div
+        class="uk-position-relative"
+        id="team"
+        uk-scrollspy="cls:uk-animation-fade"
+      >
+        <div class="uk-section">
+          <div class="uk-container">
+            <div class="uk-position-top-center">
+              <div class="uk-tile uk-tile-transparent">
+                <span class="sectionHead">Team</span>
+              </div>
+            </div>
+            <div class="uk-position-center">
+              <main id="teamContainer"></main>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="uk-position-relative"
+        id="sponsors"
+        uk-scrollspy="cls:uk-animation-fade"
+      >
+        <div class="uk-position-top-center">
+          <div class="uk-tile uk-tile-transparent">
+            <h1 class="sectionHead" data-text="Sponsors">Sponsors</h1>
+          </div>
+        </div>
+        <br /><br />
+        <main id="sponsorContainer">
+          <!-- Content injected via DOM -->
+        </main>
+      </div>
+
+      <!--Sponsor section ends-->
+      <!-- Footer section -->
+      <footer
+        class="uk-position-relative footer-distributed"
+        uk-scrollspy="cls:uk-animation-fade"
+        id="contact"
+      >
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+
+        <div class="footer-left">
+          <p class="footer-company-name">
+            <img
+              src="static/img/ieee-white.png"
+              style="width: 70%; margin-top: -10px"
+            />
+          </p>
+          <br /><br />
+        </div>
+
+        <div class="footer-center">
+          <div class="name">
+            <div class="btn ig-btn" style="float: left">
+              <i class="fa fa-map-marker" aria-hidden="true" id="ig"></i>
+            </div>
+            <p style="display: flex; text-align: left">
+              Xenith 2022 <br />
+              Jaypee Institute Of Information Technology<br />
+              Sector-62, Noida <br />
+              India
+            </p>
+          </div>
+
+          <div class="contact-row">
+            <div class="name">
+              <div class="btn ph-btn" style="float: left">
+                <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
+              </div>
+              <p>Shwetank : +91 9852244157</p>
+            </div>
+  
+            <div class="name">
+              <div class="btn ph-btn" style="float: left">
+                <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
+              </div>
+              <p>Priyanjali : +91 7011528526</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span class="uk-text-center uk-text-large">Our Socials</span>
+          </p>
+
+          <div class="footer-icons">
+            <div class="container">
+              <div
+                class="btn fb-btn"
+                onclick='window.open("https://www.facebook.com/ieeesbjiit/", "noopener noreferrer")'
+              >
+                <i class="fa fa-facebook" aria-hidden="true" id="fb"></i>
+              </div>
+              <div
+                class="btn ig-btn"
+                onclick="window.open('https://www.instagram.com/ieeesbjiit/', 'noopener noreferrer')"
+              >
+                <i class="fa fa-instagram" aria-hidden="true" id="ig"></i>
+              </div>
+              <div
+                class="btn ln-btn"
+                onclick="window.open('https://www.linkedin.com/company/ieee-student-branch-jiit/', 'noopener noreferrer')"
+              >
+                <i class="fa fa-linkedin" aria-hidden="true" id="ln"></i>
+              </div>
+              <div
+                class="btn gt-btn"
+                onclick="window.open('https://github.com/ieeesbjiit', 'noopener noreferrer')"
+              >
+                <i class="fa fa-github" aria-hidden="true" id="gt"></i>
+              </div>
+              <div
+                class="btn yt-btn"
+                onclick="window.open('https://www.youtube.com/c/IEEESBJIIT', 'noopener noreferrer')"
+              >
+                <i class="fa fa-youtube-play" aria-hidden="true" id="yt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
+          <div class="footer-bottom">
+          <p class="footer-links" style="text-align: center">
+            <a href="#postLoader" class="link-1">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#event">Events</a>
+
+            <a href="#timeline">Timeline</a>
+
+            <a href="#team">Team</a>
+
+            <a href="#sponsors">Sponsors</a>
+
+            <a href="#contact">Contact</a>
+          </p>
+        </div>
+        -->
+
+        <div id="totop-icon">
+          <a href="#postLoader" uk-totop></a>
+        </div>
+      </footer>
+    </div>
+    <!--Team section ends-->
+    <!--Sponsor section begins-->
+  </body>
+</html>

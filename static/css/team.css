@@ -1,0 +1,131 @@
+#teamContainer {
+  height: auto !important;
+}
+
+#team {
+  min-height: 260vh;
+  overflow: hidden;
+  padding: 5%;
+  /* background: linear-gradient(45deg, #743ad5 0%, #d53a9d 100%); */
+  background: url('/static/img/teambg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 700px) {
+
+  #team {
+    min-height: 1050vh;
+    overflow: hidden;
+    padding: 5%;
+    /* background: linear-gradient(45deg, #743ad5 0%, #d53a9d 100%); */
+    background: url('/static/img/bgtemp.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .team-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    border-radius: 10%;
+  }
+
+}
+
+#team .sectionHead {
+    color: white;
+}
+
+.team-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  flex-wrap: wrap;
+  border-radius: 10%;
+}
+
+.team-card .container {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  color: #000;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px;
+  transition: 0.5s;
+  border-radius: 10%;
+}
+
+.team-card .container:hover {
+  transform: translateY(-20px);
+}
+
+.team-card .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  background: white;
+}
+
+.team-card .container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  filter: blur(10px);
+}
+
+.team-card .container span {
+  position: absolute;
+  align-self: baseline;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+.team-card .container h1 {
+  position: absolute;
+  align-self: flex-end;
+  background: transparent;
+  z-index: 2;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: black;
+}
+
+.team-card .container img {
+  position: absolute;
+  align-self: center;
+  background: transparent;
+  z-index: 2;
+}
+
+.team-card-img
+{
+  width: 200px;
+  height: 35vh;
+  border-radius: 20px;
+  border: 3px solid black;
+}
