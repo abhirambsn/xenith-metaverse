@@ -3,11 +3,13 @@
 }
 #about {
     height: 60px;
+    color: white;
 }
 .toggle-text{
     cursor: pointer;
     font-weight: bold;
-    color: #132942;
+    /* color: #132942; */
+    color: white;
 }
 
 @media screen and (max-width: 768px) {

@@ -41,6 +41,12 @@
 
 html {
   scroll-behavior: smooth;
+  background: url('../img/psbg.jpg');
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
 .lotter-bg {

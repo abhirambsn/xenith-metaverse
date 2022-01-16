@@ -27,7 +27,8 @@
   content: '';
   width: 2px;
   height: 100%;
-  background-image: linear-gradient(to right, #171D2F, #132942, #11111E);;
+  /* background-image: linear-gradient(to right, #171D2F, #132942, #11111E); */
+  background: white;
   transform: translateX(-50%);
 }
 
@@ -100,7 +101,8 @@
 .timeline-content .circle {
   width: 30px;
   height: 30px;
-  background-color: #132942;
+  /* background-color: #132942; */
+  background-color: white;
   border-radius: 50%;
   top: 0;
   position: absolute;
@@ -110,7 +112,8 @@
   content: ' ';
   width: 15px;
   height: 15px;
-  background-color: #11111E;
+  /* background-color: #11111E; */
+  background-color: whitesmoke;
   border-radius: 50%;
   position: absolute;
   top: 50%;
