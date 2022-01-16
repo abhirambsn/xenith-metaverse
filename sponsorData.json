@@ -8,72 +8,9 @@
     },
     {
         "id": 2,
-        "name": "Alpha Buildr",
-        "image": "static/img/sponsors/alphabuildr.jpeg",
-        "type": "Website Partner",
-        "link": "https://app.alphabuildr.com/"
-    },
-    {
-        "id": 3,
-        "name": "Coding Minutes",
-        "image": "static/img/sponsors/codingminutes.png",
-        "type": "Technical Partner",
-        "link": "https://www.codingminutes.com/"
-    },
-    {
-        "id": 4,
-        "name": "Grab ON",
-        "image": "static/img/sponsors/grabon.png",
-        "type": "Saving Partner",
-        "link": "https://www.grabon.in/"
-    },
-    {
-        "id": 5,
-        "name": "Programming PathShala",
-        "image": "static/img/sponsors/programmingpathshala.jpg",
-        "type": "Teaching Partner",
-        "link": "https://renaissance.programmingpathshala.com/crack-coding-interviews"
-    },
-    {
-        "id": 6,
-        "name": "Elearn Markets",
-        "image": "static/img/sponsors/elearnmarket.png",
-        "type": "Finance Education Partner",
-        "link": "https://www.elearnmarkets.com/"
-    },
-    {
-        "id": 7,
-        "name": "Pieces",
-        "image": "static/img/sponsors/pieces.jpeg",
-        "type": "Snippet Partner",
-        "link": "https://code.pieces.app/"
-    },
-    {
-        "id": 8,
-        "name": "Squicker",
-        "image": "static/img/sponsors/squicker.png",
-        "type": "Foreign Education Partner",
-        "link": "https://squickr.de/"
-    },
-    {
-        "id": 9,
-        "name": "Jamboree",
-        "image": "static/img/sponsors/jamboree.jpeg",
-        "type": "Other Sponsors",
-        "link": "https://www.jamboreeindia.com/"
-    },
-    {
-        "id": 10,
-        "name": "Converge EduTech",
-        "image": "static/img/sponsors/converge.jpg",
-        "type": "Other Sponsors",
-        "link": "https://www.convergeapp.co/"
-    },
-    {
-        "id": 11,
-        "name": "Yocket",
-        "image": "static/img/sponsors/yocket.png",
-        "type": "Other Sponsors",
-        "link": "https://yocket.com/"
+        "name": "Echo 3D",
+        "image": "static/img/sponsors/echo3d.jpg",
+        "type": "Other Sponsor",
+        "link": "https://www.echo3d.co/"
     }
 ]
