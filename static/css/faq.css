@@ -1,0 +1,25 @@
+#faq {
+    max-height: 100vh;
+    min-height: 60vh;
+    height: auto !important;
+}
+
+#faq .sectionHead {
+    height: auto;
+}
+
+.faq-container {
+    margin: 5% !important;
+    width: auto !important;
+}
+
+@media screen and (max-width: 768px) {
+    #faq {
+        height: 60vh;
+    }
+
+    .faq-container {
+        margin: 15% !important;
+        width: auto !important;
+    }
+}

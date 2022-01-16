@@ -15,6 +15,19 @@ $(document).ready(function () {
   });
 });
 
+const toggleAbout = () => {
+  const aboutToggle = document.getElementById("readtoggle");
+  if (aboutToggle.classList.contains("more")) {
+    aboutToggle.classList.remove("more");
+    aboutToggle.classList.add("less");
+    aboutToggle.innerHTML = ".Read Less";
+  } else {
+    aboutToggle.classList.remove("less");
+    aboutToggle.classList.add("more");
+    aboutToggle.innerHTML = "...Read More";
+  }
+}
+
 const setActive = (id) => {
   if (id > 7) return;
   if (id < 1) return;
@@ -41,35 +54,6 @@ signs.forEach((el) => {
     mixupInterval(el);
   });
 });
-
-const createTeamCard = (name, designation, imageUrl) => {
-  var parent = document.createElement("div");
-  parent.className = "col-md-4";
-  parent.style.marginTop = "30px";
-
-  var card = document.createElement("div");
-  card.className = "team-card";
-
-  var cardContainer = document.createElement("div");
-  cardContainer.className = "container";
-
-  var image = document.createElement("img");
-  image.className = "team-card-img";
-  image.src = imageUrl;
-
-  var heading = document.createElement("h1");
-  heading.innerHTML = name;
-
-  var type = document.createElement("span");
-  type.innerHTML = designation;
-
-  cardContainer.appendChild(image);
-  cardContainer.appendChild(type);
-  cardContainer.appendChild(heading);
-  card.appendChild(cardContainer);
-  parent.appendChild(card);
-  document.getElementById("teamContainer").appendChild(parent);
-};
 
 const createSponsorCard = (name, spType, imageUrl, link = "") => {
   var parent = document.createElement("div");
@@ -102,16 +86,6 @@ const createSponsorCard = (name, spType, imageUrl, link = "") => {
   parent.appendChild(card);
   document.getElementById("sponsorContainer").appendChild(parent);
 };
-
-var images = [];
-fetch("./teamData.json")
-  .then((res) => res.json())
-  .then((data) => {
-    data.map((image) =>
-      createTeamCard(image.name, image.designation, image.image)
-    );
-  })
-  .catch((err) => console.error(err));
 
 var sponsors = [];
 fetch("./sponsorData.json")

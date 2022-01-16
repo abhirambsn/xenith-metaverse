@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="static/css/scroll.css" />
     <link rel="stylesheet" href="static/css/timeline.css" />
     <link rel="stylesheet" href="static/css/sponsor.css" />
-    <link rel="stylesheet" href="static/css/team.css" />
+    <link rel="stylesheet" href="static/css/faq.css" />
     <link rel="stylesheet" href="static/css/footer.css" />
     <link rel="stylesheet" href="static/css/navbar.css" />
     <link rel="stylesheet" href="static/css/event.css" />
@@ -98,7 +98,7 @@
                   <li id="ni-2" onclick="setActive(2)"><a class="cp-tag" href="#about">About</a></li>
                   <li id="ni-3" onclick="setActive(3)"><a class="cp-tag" href="#problemstmt">Tracks</a></li>
                   <li id="ni-4" onclick="setActive(4)"><a class="cp-tag" href="#timeline">Timeline</a></li>
-                  <li id="ni-5" onclick="setActive(5)"><a class="cp-tag" href="#team">Team</a></li>
+                  <li id="ni-5" onclick="setActive(5)"><a class="cp-tag" href="#faq">FAQs</a></li>
                   <li id="ni-6" onclick="setActive(6)"><a class="cp-tag" href="#sponsors">Sponsors</a></li>
                   <li id="ni-7" onclick="setActive(7)"><a class="cp-tag" href="#contact">Contact</a></li>
                 </ul>
@@ -127,7 +127,7 @@
                 <li><a class="a-tag" href="#about">About</a></li>
                 <li><a class="a-tag" href="#problemstmt">Tracks</a></li>
                 <li><a class="a-tag" href="#timeline">Timeline</a></li>
-                <li><a class="a-tag" href="#team">Team</a></li>
+                <li><a class="a-tag" href="#faq">FAQ</a></li>
                 <li><a class="a-tag" href="#sponsors">Sponsors</a></li>
                 <li><a class="a-tag" href="#contact">Contact</a></li>
               </ul>
@@ -162,7 +162,9 @@
               <span
                 data-uk-toggle="{target:'.my-class'}"
                 uk-toggle="target: #toggle-abt; animation: uk-animation-slide-top"
-                class="toggle-text self"
+                class="toggle-text more self"
+                id="readtoggle"
+                onclick="toggleAbout()"
               >
                 ..Read More
               </span>
@@ -345,25 +347,53 @@
       
       <!--Timeline section ends -->
 
-      <!--Team section begins-->
-      <div
-        class="uk-position-relative"
-        id="team"
-        uk-scrollspy="cls:uk-animation-fade"
-      >
+      <!--FAQ section begins-->
+      <div class="uk-position-relative" id="faq" uk-scrollspy="cls:uk-animation-fade">
+        <div class="uk-position-top-center">
+          <div class="uk-tile uk-tile-transparent">
+            <h1 class="sectionHead" data-text="FAQs">FAQ's</h1>
+          </div>
+        </div>
         <div class="uk-section">
-          <div class="uk-container">
-            <div class="uk-position-top-center">
-              <div class="uk-tile uk-tile-transparent">
-                <span class="sectionHead">Team</span>
-              </div>
-            </div>
-            <div class="uk-position-center">
-              <main id="teamContainer"></main>
-            </div>
+          <div class="faq-container">
+            <ul uk-accordion>
+              <li>
+                <a href="#" class="uk-accordion-title"><b>Q1</b></a>
+                <div class="uk-accordion-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, laudantium?</div>
+              </li>
+              <li>
+                <a href="#" class="uk-accordion-title"><b>Q2</b></a>
+                <div class="uk-accordion-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, laudantium?</div>
+              </li>
+              <li>
+                <a href="#" class="uk-accordion-title"><b>Q3</b></a>
+                <div class="uk-accordion-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, laudantium?</div>
+              </li>
+              <li>
+                <a href="#" class="uk-accordion-title"><b>Q4</b></a>
+                <div class="uk-accordion-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, laudantium?</div>
+              </li>
+              <li>
+                <a href="#" class="uk-accordion-title"><b>Q5</b></a>
+                <div class="uk-accordion-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, laudantium?</div>
+              </li>
+              <li>
+                <a href="#" class="uk-accordion-title"><b>Q6</b></a>
+                <div class="uk-accordion-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, laudantium?</div>
+              </li>
+              <li>
+                <a href="#" class="uk-accordion-title"><b>Q7</b></a>
+                <div class="uk-accordion-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, laudantium?</div>
+              </li>
+              <li>
+                <a href="#" class="uk-accordion-title"><b>Q8</b></a>
+                <div class="uk-accordion-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, laudantium?</div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <!-- Sponsor Section Begins -->
       <div
         class="uk-position-relative"
         id="sponsors"
@@ -422,7 +452,7 @@
               <div class="btn ph-btn" style="float: left">
                 <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
               </div>
-              <p>Shwetank : +91 9852244157</p>
+              <p>Ayush : +91 6306398879</p>
             </div>
   
             <div class="name">
@@ -474,32 +504,10 @@
             </div>
           </div>
         </div>
-        <!--
-          <div class="footer-bottom">
-          <p class="footer-links" style="text-align: center">
-            <a href="#postLoader" class="link-1">Home</a>
-
-            <a href="#about">About</a>
-
-            <a href="#event">Events</a>
-
-            <a href="#timeline">Timeline</a>
-
-            <a href="#team">Team</a>
-
-            <a href="#sponsors">Sponsors</a>
-
-            <a href="#contact">Contact</a>
-          </p>
-        </div>
-        -->
-
         <div id="totop-icon">
           <a href="#postLoader" uk-totop></a>
         </div>
       </footer>
     </div>
-    <!--Team section ends-->
-    <!--Sponsor section begins-->
   </body>
 </html>
