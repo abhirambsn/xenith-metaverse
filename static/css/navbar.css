@@ -181,3 +181,7 @@ nav .active {
   opacity: 1;
   font-weight: bold;
 }
+
+.span-heading {
+  font-size: 2.5rem;
+}
