@@ -1,8 +1,17 @@
 .about-container{
  margin: 5% !important;
 }
+#about {
+    height: 60px;
+}
 .toggle-text{
     cursor: pointer;
     font-weight: bold;
     color: #132942;
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        height: 0;
+    }
 }
