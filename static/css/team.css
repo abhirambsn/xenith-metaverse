@@ -7,7 +7,7 @@
   overflow: hidden;
   padding: 5%;
   /* background: linear-gradient(45deg, #743ad5 0%, #d53a9d 100%); */
-  background: url('/static/img/teambg.jpg');
+  background: url('static/img/teambg.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
