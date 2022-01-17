@@ -618,3 +618,8 @@ i.fa {
   margin-left: auto;
   margin-right: auto;
 }
+
+.ph-link {
+  text-decoration: none;
+  color: white;
+}
