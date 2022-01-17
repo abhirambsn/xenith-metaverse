@@ -1,5 +1,5 @@
 #faq {
-    max-height: 100vh;
+    max-height: 120vh;
     min-height: 60vh;
     height: auto !important;
     color: white;
@@ -14,8 +14,11 @@
     width: auto !important;
 }
 
-.faq-container * {
-    color: white;
+.faq-container ul li {
+    padding: 10px;
+    color: black;
+    background: white;
+    border-radius: 10px;
 }
 
 .font-lg {
