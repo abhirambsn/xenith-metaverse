@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,600&display=swap');
+
+#prizes {
+    max-height: 60vh;
+    min-height: 34vh;
+    height: auto !important;
+    color: white;
+}
+
+#prizes .sectionHead {
+    height: auto;
+}
+
+.prizes-container {
+    margin: 5% !important;
+    width: auto !important;
+}
+
+.prizes-container * {
+    color: white;
+}
+
+.prizes-content {
+    font-size: 3rem;
+    font-family: 'Chakra Petch', cursive, sans-serif, monospace;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #prizes {
+        height: 20vh;
+    }
+
+    .prizes-container {
+        margin: 15% !important;
+        width: auto !important;
+    }
+}

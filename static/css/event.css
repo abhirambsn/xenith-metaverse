@@ -65,7 +65,7 @@
 
   .flip-card {
   background-color: transparent;
-  height:  350px;
+  height: 350px;
   width: 300px;
   cursor: pointer;
   z-index: 2;
@@ -106,16 +106,30 @@
 
 /* Style the back side */
 .flip-card-back {
+  height: 350px;
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #132942, #11111E);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #132942, #11111E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;    
   transform: rotateY(180deg);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: 10px;
 }
 
-.flip-card-back h1 {
-  color: white;
+.flip-card-back::-webkit-scrollbar {
+  width: 10px
 }
+
+.flip-card-back p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
 .flip-card-front-text
 {
   height: 100%;
@@ -132,4 +146,14 @@
   font-family: 'Audiowide', cursive;
   color: white;
   font-size: 2.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .flip-card-back {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .flip-card-back::-webkit-scrollbar {
+    display: none;
+  }
 }

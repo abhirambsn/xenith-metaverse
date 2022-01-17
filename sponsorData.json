@@ -8,6 +8,27 @@
     },
     {
         "id": 2,
+        "name": "Coding Minutes",
+        "image": "static/img/sponsors/codingminutes.png",
+        "type": "Technical Partner",
+        "link": "https://www.codingminutes.com/"
+    },
+    {
+        "id": 3,
+        "name": "Skill Arena",
+        "image": "static/img/sponsors/skillarena.jfif",
+        "type": "Other Sponsor",
+        "link": "https://www.skillarena.in/"
+    },
+    {
+        "id": 4,
+        "name": "Rahee",
+        "image": "https://via.placeholder.com/150",
+        "type": "Other Sponsor",
+        "link": "https://metaverse-xenith22.tech/"
+    },
+    {
+        "id": 5,
         "name": "Echo 3D",
         "image": "static/img/sponsors/echo3d.jpeg",
         "type": "Other Sponsor",
