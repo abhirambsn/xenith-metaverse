@@ -15,6 +15,43 @@ $(document).ready(function () {
   });
 });
 
+const navMap = {
+  'postLoader': 1,
+  'about': 2,
+  'problemstmt':3,
+  'timeline': 4,
+  'faq': 5,
+  'sponsors': 6,
+  'prizes': 7,
+  'contact': 8
+}
+
+window.addEventListener("scroll", () => {
+  let current = "postLoader";
+  const sections = [
+    document.getElementById("postLoader"),
+    document.getElementById("about"),
+    document.getElementById("problemstmt"),
+    document.getElementById("timeline"),
+    document.getElementById("faq"),
+    document.getElementById("sponsors"),
+    document.getElementById("prizes"),
+    document.getElementById("contact")
+  ];
+  
+  sections.forEach(section => {
+    const secTop = section.offsetTop;
+    const secHt = section.clientHeight;
+    if (scrollY >= (secTop - secHt / 4)) {
+      current = section.getAttribute('id')
+    }
+  })
+
+  console.log(current, navMap[current]);
+
+  setActive(navMap[current]);
+});
+
 const toggleAbout = () => {
   const aboutToggle = document.getElementById("readtoggle");
   if (aboutToggle.classList.contains("more")) {
@@ -26,12 +63,12 @@ const toggleAbout = () => {
     aboutToggle.classList.add("more");
     aboutToggle.innerHTML = "...Read More";
   }
-}
+};
 
 const setActive = (id) => {
   if (id > 7) return;
   if (id < 1) return;
-  
+
   var ids = [1, 2, 3, 4, 5, 6, 7];
   ids.map((id) =>
     document.getElementById(`ni-${id}`).classList.remove("active")
