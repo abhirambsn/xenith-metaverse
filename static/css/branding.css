@@ -1,0 +1,31 @@
+#brandingContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    margin-top: 5% !important; 
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+#brandingContainer .sponsor-card {
+    width: 100%;
+}
+
+.brand-image {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+}

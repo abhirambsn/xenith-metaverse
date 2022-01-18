@@ -124,6 +124,16 @@ const createSponsorCard = (name, spType, imageUrl, link = "") => {
   document.getElementById("sponsorContainer").appendChild(parent);
 };
 
+// var branding = [];
+// fetch("./branding.json")
+//   .then((res) => res.json())
+//   .then((data) => {
+//     data.map((sponsor) =>
+//       createSponsorCard(sponsor.name, sponsor.type, sponsor.image, sponsor.link)
+//     );
+//   })
+//   .catch((err) => console.error(err));
+
 var sponsors = [];
 fetch("./sponsorData.json")
   .then((res) => res.json())
@@ -133,3 +143,4 @@ fetch("./sponsorData.json")
     );
   })
   .catch((err) => console.error(err));
+

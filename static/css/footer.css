@@ -13,7 +13,7 @@
   align-items: center;
   flex-direction: column;
   height: 370px;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Chakra Petch', cursive;
   font-size: 20px;
   bottom: 0;
   margin-top: 300px;
@@ -184,7 +184,7 @@ section {
   font-weight: 400;
   text-decoration: none;
   color: inherit;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Chakra Petch', cursive;
   font-size: 25px;
   margin: 0 1%;
 }
@@ -268,7 +268,7 @@ section {
   color: #ffffff;
   font-size: 30 px;
   font-weight: bold;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Chakra Petch', cursive;
   margin-bottom: 20px;
 }
 
