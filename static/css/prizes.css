@@ -35,4 +35,8 @@
         margin: 15% !important;
         width: auto !important;
     }
+
+    .prizes-content {
+        font-size: 1.5rem;
+    }
 }
