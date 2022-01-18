@@ -17,14 +17,14 @@
         "id": 3,
         "name": "Skill Arena",
         "image": "static/img/sponsors/skillarena.jfif",
-        "type": "Other Sponsor",
+        "type": "Skill Development Partner",
         "link": "https://www.skillarena.in/"
     },
     {
         "id": 4,
         "name": "Rahee",
         "image": "https://via.placeholder.com/150",
-        "type": "Other Sponsor",
+        "type": "Opportunities Partner",
         "link": "https://metaverse-xenith22.tech/"
     },
     {
