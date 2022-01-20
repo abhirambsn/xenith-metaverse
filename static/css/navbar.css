@@ -185,3 +185,8 @@ nav .active {
 .span-heading {
   font-size: 2.5rem;
 }
+
+.apply-folio {
+  display: grid;
+  place-items: center;
+}
