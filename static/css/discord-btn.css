@@ -1,0 +1,31 @@
+.discord-btn {
+    align-items: center;
+    border-radius: 4px;
+    background-color: #414EEC;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    outline: none;
+    height: 44px;
+    padding: 0 32px;
+    transition: all .1s ease-in 0s;
+    white-space: nowrap;
+    box-sizing: border-box;
+    appearance: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.discord-btn__brand {
+    color: white;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+
+.discord-btn__content {
+    flex-grow: 1;
+    margin-left: 5%;
+    color: white;
+    font-size: 20px;
+}
