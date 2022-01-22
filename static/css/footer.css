@@ -469,10 +469,12 @@ i.fa {
   color: #006fff;
   text-shadow: 0 0 20px #006fff;
 }
+
 #ig {
-  color: #ff5f40;
-  text-shadow: 0 0 20px #ff5f40;
+  color: black;
+  background-clip: text;
 }
+
 #ln {
   color: #00acff;
   text-shadow: 0 0 20px #00acff;
@@ -482,8 +484,8 @@ i.fa {
   text-shadow: 0 0 30px #ff0000;
 }
 #gt {
-  color: #860c0c;
-  text-shadow: 0 0 15px #860c0c;
+  color: #000;
+  text-shadow: 0 0 15px #000;
 }
 #ph {
   color: #16cc34;
@@ -511,11 +513,11 @@ i.fa {
   box-shadow: 0 20px 35px -9px rgba(255, 16, 39, 0.57);
 }
 .btn.gt-btn {
-  box-shadow: 0 15px 15px -11px #be1818;
+  box-shadow: 0 15px 15px -11px #000000;
 }
 .btn.gt-btn:hover {
   transform: scale(1.2);
-  box-shadow: 0 20px 35px -9px #860c0c;
+  box-shadow: 0 20px 35px -9px #000000;
 }
 
 .btn.yt-btn {
