@@ -475,6 +475,11 @@ i.fa {
   background-clip: text;
 }
 
+#loc {
+  color: navy;
+  background-clip: text;
+}
+
 #ln {
   color: #00acff;
   text-shadow: 0 0 20px #00acff;
@@ -507,6 +512,9 @@ i.fa {
 }
 .btn.ig-btn {
   box-shadow: 0 15px 15px -11px rgba(255, 16, 39, 0.5);
+}
+.btn.loc-btn {
+  box-shadow: 0 15px 15px -11px navy;
 }
 .btn.ig-btn:hover {
   transform: scale(1.2);
