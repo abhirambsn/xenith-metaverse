@@ -105,6 +105,22 @@
   animation: animate 3s linear infinite;
 }
 
+
+@media screen and (max-width: 768px) {
+  .wave#wave1 {
+    z-index: 0;
+  }
+  .wave#wave2 {
+    z-index: 0;
+  }
+  .wave#wave3 {
+    z-index: 0;
+  }
+  .wave#wave4 {
+    z-index: 0;
+  }
+}
+
 @keyframes animateWaves {
   0% {
     background-position-x: 1000px;

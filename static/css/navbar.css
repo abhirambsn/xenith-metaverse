@@ -47,9 +47,9 @@ nav {
   z-index: 15 !important;
   -webkit-user-select: none;
   user-select: none;
-  background: white;
-  border-radius: 50%;
-  padding: 20px;
+  background: transparent;
+  border-radius: 20%;
+  padding: 10px;
 }
 
 #menuToggle input {
@@ -68,13 +68,13 @@ nav {
   height: 3px;
   margin-bottom: 5px;
   position: relative;
-  background: black;
+  background: white;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 5px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  background: black;
+  background: white;
 }
 
 #menuToggle span:first-child {
@@ -113,6 +113,7 @@ nav {
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  z-index: -1;
 }
 
 #menu li {
