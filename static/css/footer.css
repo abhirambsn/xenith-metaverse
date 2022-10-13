@@ -142,7 +142,7 @@
 section {
   width: 100%;
   display: inline-block;
-  background: #333;
+  background: rgb(30, 30, 30);
   height: 50vh;
   text-align: center;
   font-size: 22px;
@@ -151,7 +151,7 @@ section {
 }
 
 .footer-distributed {
-  background: #132942;
+  background: #16304f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -206,7 +206,7 @@ section {
 }
 
 .footer-distributed .footer-company-name {
-  color: #222;
+  color: rgb(18, 18, 18);
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -352,7 +352,7 @@ section {
 .card-lift--hover:hover {
   transition: all 0.15s ease;
   transform: translateY(-20px);
-  box-shadow: 0 0 2rem 0 gold;
+  box-shadow: 0 0 2rem 0 rgb(239, 204, 7);
   cursor: pointer;
 }
 
